@@ -1,0 +1,30 @@
+nav{
+    height: 80px;
+    background-color: white;
+    border: 1px solid black;
+}
+.div-header{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nhm{
+    position: absolute;
+    width:60px;
+    height: 60px;
+    left: 6px;
+    top:6px;
+    padding: 7px 20px;
+    margin-right: 50px;
+}
+.btnn{
+    height: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    width: 100px;
+}

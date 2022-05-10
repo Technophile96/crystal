@@ -1,0 +1,24 @@
+.Loginpart{
+    min-width: 100%;
+    min-height: 100%;
+    height: inherit;
+    width: inherit;
+    text-align: start;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: 10;
+    font-family: Arial;
+}
+.FORM{
+    font-size: 15px;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 85%;
+    align-content: center;
+    top: 25%;
+    left:25%;
+    color: rgb(0, 0, 0);
+}
