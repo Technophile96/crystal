@@ -146,6 +146,15 @@ nav{
     font-family: monospace;
 }
 
+.topic1{
+    position: absolute;
+    left: 5%;
+}
+.topic2{
+    position: absolute;
+    right: 5%;
+}
+
 .fulldetails{
     position: inherit;
     /* background-color: red; */
@@ -154,7 +163,6 @@ nav{
     flex-direction: row;
 }
 .det1{
-    background-color: white;
     position: absolute;
     top: 35%;
     height: 27%;
@@ -166,7 +174,6 @@ nav{
     align-items: baseline;
 }
 .det2{
-    background-color: white;
     position: absolute;
     right: 22%;
     top: 38%;

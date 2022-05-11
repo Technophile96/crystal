@@ -47,15 +47,15 @@ const Dashboard = () => {
                     <p className='title'>Account Summary</p>
                     <div className='accdetails'>
                         <div className='topic'>
-                            <p>Savings Account</p>
-                            <p>Closing Balance: {item.savings}.00</p>
+                            <p className='topic1'>Savings Account</p>
+                            <p className='topic2'>Closing Balance: {item.savings}.00</p>
                         </div>
                         <div className='fulldetails'>
                             <div className='det1'>
                                 <p>Account No: {item.idAccounts}</p>
                                 <p>Name : {item.custname}</p>
                             </div>
-                            <div>
+                            <div className='det2'>
                                 <p>Branch : {item.branch}</p>
                                 <p>IFSC code : {item.IFSC}</p>
                             </div>
