@@ -1,8 +1,8 @@
 import React from 'react'
 import './dashboard.css'
 import logo from './logopng.png'
-import axios from 'axios' 
-import { useState } from 'react'
+// import axios from 'axios' 
+// import { useState } from 'react'
 
 const dashboard = () => {
     // retriveName();
