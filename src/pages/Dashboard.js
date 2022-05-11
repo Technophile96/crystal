@@ -3,6 +3,7 @@ import './dashboard.css'
 import logo from './logopng.png'
 import axios from 'axios' 
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
 
@@ -26,7 +27,7 @@ const Dashboard = () => {
                     <img src={logo} className='nhm' alt="Description of Home"/>
                 </div>
                 <div style={heda} className='btn'>
-                    <button className='btnn'>Log out</button>
+                    <button className='btnn' onClick={navigate("./")}>Log out</button>
                 </div>
             </div>
         </nav>
