@@ -158,7 +158,7 @@ nav{
     position: absolute;
     top: 35%;
     height: 27%;
-    left: 35%;
+    left: 38%;
     display: flex;
     flex-direction: column;
     font-size: 18px;
@@ -169,7 +169,7 @@ nav{
     background-color: white;
     position: absolute;
     right: 22%;
-    top: 35%;
+    top: 38%;
     height: 27%;
     display: flex;
     flex-direction: column;
