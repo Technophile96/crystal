@@ -17,9 +17,6 @@ const Dashboard = () => {
            setList(response.data);
         });
       };
-      const loggingout = ()=>{
-          window.location.href = 'https://main--crystal-delta-banking.netlify.app/';
-      }
 
   return (
       <>
@@ -29,7 +26,7 @@ const Dashboard = () => {
                     <img src={logo} className='nhm' alt="Description of Home"/>
                 </div>
                 <div style={heda} className='btn'>
-                    <button className='btnn' onClick={loggingout}>Log out</button>
+                    <button className='btnn' >Log out</button>
                 </div>
             </div>
         </nav>
