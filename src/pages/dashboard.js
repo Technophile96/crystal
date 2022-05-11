@@ -23,7 +23,7 @@ const dashboard = () => {
                     <button className='btn2'>Transfer Fund</button>
                 </div>
                 <div className='display'>
-                    <h1>display</h1>
+                    <h1>Account Summary</h1>
                 </div>
             </div>
         </main>

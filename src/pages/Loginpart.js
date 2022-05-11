@@ -49,7 +49,7 @@ const Loginpart = () => {
               /><br></br>
             <br></br>
             <br></br>
-            <button onClick={loginsystem} className="but">Login</button>
+            <button onClick={loginsystem} className="buttt">Login</button>
           </label>
         </form>
         </div>
