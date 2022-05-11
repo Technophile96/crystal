@@ -19,7 +19,7 @@ const dashboard = () => {
             <h1 className='username'>Greetings Muthukumaran M</h1>
             <div className='detailbox'>
                 <div className='options'>
-                    <button className='btn1'>Account Summary</button>
+                    <button className='btn1 active'>Account Summary</button>
                     <button className='btn2'>Transfer Fund</button>
                 </div>
                 <div className='display'>
