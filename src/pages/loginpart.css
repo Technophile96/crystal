@@ -38,7 +38,7 @@
 
 .buttt:active {
   background-color: rgb(51, 153, 255);
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px rgb(49, 142, 236);
   transform: translateY(4px);
 }
 
@@ -53,6 +53,5 @@
 
 .btnn:active {
   background-color: grey;
-  box-shadow: 0 5px rgb(42, 41, 41);
   transform: translateY(4px);
 }

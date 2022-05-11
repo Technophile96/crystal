@@ -1,8 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './dashboard.css'
 import logo from './logopng.png'
+import axios from 'axios'
+   
 
 const dashboard = () => {
+    const name='';
+    retriveName();
+    const [List, setList] = useState([]); 
+    const retriveName = (e) =>{
+        e.preventDefault();
+        axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
+            CustID:localStorage.getItem('Name'),
+        }).then((response)=>{
+           console.log(response);
+           setList(response.data);
+        });
+      };
+
   return (
       <>
         <nav>
@@ -16,7 +31,11 @@ const dashboard = () => {
             </div>
         </nav>
         <main className='main'>
-            <h1 className='username'>Greetings Muthukumaran M</h1>
+        {List.map((item, index)=>{
+            return(
+            <h1 className='username'>Greetings {item.custname}</h1>
+            )
+        })}
             <div className='detailbox'>
                 <div className='options'>
                     <button className='btn1 active'>Account Summary</button>

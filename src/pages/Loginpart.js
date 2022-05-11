@@ -9,6 +9,7 @@ const Loginpart = () => {
   let navigate = useNavigate(); 
   const [username,setUsernameReg] = useState("");
   const [Password,setPasswordReg] = useState("");
+  localStorage.setItem('Name', username);
   const loginsystem = (e) =>{
     e.preventDefault();
     axios.post("https://crystal-delta-banking.herokuapp.com/register",{
