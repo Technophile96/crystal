@@ -36,7 +36,6 @@ const Dashboard = () => {
             <h1 className='username'>Greetings {item.custname}</h1>
             )
         })}
-           <h1 className='username'>Greetings {localStorage.getItem('Name')}</h1>
             <div className='detailbox'>
                 <div className='options'>
                     <button className='btn1 active'>Account Summary</button>
