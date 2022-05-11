@@ -2,10 +2,8 @@ import React, { useState } from 'react'
 import './loginpart.css'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
-import {  toast } from 'react-toastify';
+import toast from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 const Loginpart = () => {
    
   let navigate = useNavigate(); 
@@ -19,12 +17,12 @@ const Loginpart = () => {
     }).then((response)=>{
        console.log(response);
        if(response.data.status==="200"){
-         toast("Login  Successfull!");
+         toast.success("Login  Successfull!");
          navigate("./dashboard");
        }
        else{
          //alert("Wrong username/password combination!");
-         toast("Wrong username/password");
+         toast.error("Wrong username/password");
        }
     });
   };
