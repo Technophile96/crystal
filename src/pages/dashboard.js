@@ -4,7 +4,7 @@ import logo from './logopng.png'
 import axios from 'axios' 
 import { useState } from 'react'
 
-const dashboard = () => {
+const Dashboard = () => {
 
     const [teahList, setList] = useState([]); 
     const retriveName = (e) =>{
@@ -51,7 +51,7 @@ const dashboard = () => {
   )
 }
 
-export default dashboard
+export default Dashboard
 
 const heda={
     display:'flex',

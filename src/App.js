@@ -5,7 +5,7 @@ import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Error from './pages/Error';
-import Dashboard from './pages/dashboard';
+import Dashboard from './pages/Dashboard';
 
 
 function App() {
