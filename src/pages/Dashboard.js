@@ -18,7 +18,6 @@ const Dashboard = () => {
         });
       };
       const loggingout = ()=>{
-          window.localStorage.clear();
           window.location.href = 'https://main--crystal-delta-banking.netlify.app/';
       }
 
