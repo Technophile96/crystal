@@ -6,7 +6,7 @@ import axios from 'axios'
 
 const dashboard = () => {
     retriveName();
-    const [List, setList] = useState([]); 
+    const [tList, setList] = useState([]); 
     const retriveName = (e) =>{
         e.preventDefault();
         axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
@@ -30,7 +30,7 @@ const dashboard = () => {
             </div>
         </nav>
         <main className='main'>
-        {List.map((item, index)=>{
+        {tList.map((item, index)=>{
             return(
             <h1 className='username'>Greetings {item.custname}</h1>
             )
