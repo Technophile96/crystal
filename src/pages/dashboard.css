@@ -31,7 +31,7 @@ nav{
 
 .main{
     position: absolute;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     height: 88%;
     width: 100%;
 }
@@ -47,7 +47,7 @@ nav{
     left: 10%;
     width: 80%;
     height: 75%;
-    background-color: #dbd5d5;
+    background-color: #e5e6ea;
     border-radius: 5px 5px;
     position: absolute;
     display: flex;
@@ -58,12 +58,16 @@ nav{
     display: flex;
     left: 0;
     flex-direction: column;
+    border: 2px solid #ddd9d9;
+    border-radius: 5px 0px 0px 5px;
 }
 .display{
     background-color: #ffffff;
     color: #121212;
     right: 0;
     width: 70%;
+    border: 2px solid #ddd9d9;
+    border-radius: 0px 5px 5px 0px;
 }
 .btn1{
     top: 10%;
@@ -86,8 +90,8 @@ nav{
     height: 10%;
     width: 26.5%;
     position: absolute;
-    background-color: aliceblue;
-    border: aliceblue;
+    background-color: #e5e6ea;
+    border: #e5e6ea;
     font-size: 22px;
     font-family: inherit;
     text-align: left;
