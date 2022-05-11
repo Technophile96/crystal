@@ -3,11 +3,9 @@ import './dashboard.css'
 import logo from './logopng.png'
 import axios from 'axios' 
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
     
-    let navigate = useNavigate(); 
     const [teahList, setList] = useState([]); 
     const retriveName = (e) =>{
         const id=localStorage.getItem('Name');
