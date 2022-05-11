@@ -50,7 +50,7 @@ const Loginpart = () => {
               /><br></br>
             <br></br>
             <br></br>
-            <button onClick={loginsystem} style={suh}>Login</button>
+            <button onClick={loginsystem} className="but">Login</button>
           </label>
         </form>
         </div>
@@ -63,10 +63,4 @@ export default Loginpart
 const box={
     width:'100%',
     height:'50px'
-  }
-  
-  const suh={
-    width:'100%',
-    height:'50px',
-    backgroundColor:'#3399ff'
   }
