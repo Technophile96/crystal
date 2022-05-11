@@ -16,7 +16,15 @@ const dashboard = () => {
             </div>
         </nav>
         <main className='main'>
-            <h1>Greetings Muthukumaran M</h1>
+            <h1 className='username'>Greetings Muthukumaran M</h1>
+            <div className='detailbox'>
+                <div className='options'>
+                    <h1>options</h1>
+                </div>
+                <div className='display'>
+                    <h1>display</h1>
+                </div>
+            </div>
         </main>
        </>
   )
