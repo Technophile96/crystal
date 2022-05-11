@@ -3,11 +3,9 @@ import './dashboard.css'
 import logo from './logopng.png'
 import axios from 'axios' 
 import { useState } from 'react'
-import useCollapse from 'react-collapsed';
 
 const Dashboard = () => {
 
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse()
     const [teahList, setList] = useState([]); 
     const retriveName = (e) =>{
         const id=localStorage.getItem('Name');
@@ -45,12 +43,6 @@ const Dashboard = () => {
                 </div>
                 <div className='display'>
                     <h1>Account Summary</h1>
-                    <div>
-                    <button {...getToggleProps()}>
-                        {isExpanded ? 'Collapse' : 'Expand'}
-                    </button>
-                    <section {...getCollapseProps()}>Collapsed content 🙈</section>
-                    </div>
                 </div>
             </div>
         </main>
