@@ -30,12 +30,12 @@ const Dashboard = () => {
                 </div>
             </div>
         </nav>
-        <main className='main'>
         {teahList.map((item, index)=>{
-            return(
+            return (
+        <main className='main'>
+        
             <h1 className='username'>Greetings {item.custname}</h1>
-            )
-        })}
+        
             <div className='detailbox'>
                 <div className='options'>
                     <button className='btn1 active'>Account Summary</button>
@@ -46,6 +46,8 @@ const Dashboard = () => {
                 </div>
             </div>
         </main>
+            )
+        })}
        </>
   )
 }
