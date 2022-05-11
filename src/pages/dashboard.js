@@ -5,7 +5,6 @@ import axios from 'axios'
    
 
 const dashboard = () => {
-    const name='';
     retriveName();
     const [List, setList] = useState([]); 
     const retriveName = (e) =>{
