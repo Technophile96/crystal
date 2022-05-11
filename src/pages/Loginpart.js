@@ -45,7 +45,7 @@ const Loginpart = () => {
               <br></br>
             <br></br>
             Password<br></br>
-            <input type='text' style={box} onChange={(e)=>{
+            <input type='password' style={box} onChange={(e)=>{
               setPasswordReg(e.target.value);
               }}
               /><br></br>
