@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './dashboard.css'
 import logo from './logopng.png'
-import axios from 'axios'
-   
+import axios from 'axios' 
+import { useState } from 'react'
 
 const dashboard = () => {
     retriveName();
-    const [tList, setList] = useState([]); 
+    const [teahList, setList] = useState([]); 
     const retriveName = (e) =>{
         e.preventDefault();
         axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
@@ -30,7 +30,7 @@ const dashboard = () => {
             </div>
         </nav>
         <main className='main'>
-        {tList.map((item, index)=>{
+        {teahList.map((item, index)=>{
             return(
             <h1 className='username'>Greetings {item.custname}</h1>
             )
