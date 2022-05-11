@@ -4,6 +4,7 @@ import logo from './logopng.png'
 
 const dashboard = () => {
   return (
+      <>
         <nav>
             <div className='div-header'>
                 <div>
@@ -14,6 +15,10 @@ const dashboard = () => {
                 </div>
             </div>
         </nav>
+        <main className='main'>
+            <h1>Greetings Muthukumaran M</h1>
+        </main>
+       </>
   )
 }
 
