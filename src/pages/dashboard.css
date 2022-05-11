@@ -62,7 +62,7 @@ nav{
     border-radius: 5px 0px 0px 5px;
 }
 .display{
-    background-color: #ffffff;
+    background-color: #e5e6ea;
     color: #121212;
     right: 0;
     width: 70%;
@@ -113,4 +113,88 @@ nav{
 .btn1:active,.btn2:active{
     background-color: white;
     transform: translateY(4px);
+}
+
+.title{
+    position: inherit;
+    text-align: left;
+    margin-left: 4%;
+    font-size: 30px;
+    font-family: inherit;
+}
+
+.accdetails{
+    position: inherit;
+    background-color: white;
+    margin-top: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: row;
+    height: 40%;
+}
+
+.topic{
+    position: fixed;
+    background: white;
+    height: 7%;
+    width: 51%;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #ddd9d9;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.fulldetails{
+    position: inherit;
+    /* background-color: red; */
+    width: 68%;
+    display: flex;
+    flex-direction: row;
+}
+.det1{
+    background-color: white;
+    position: absolute;
+    top: 35%;
+    height: 27%;
+    left: 35%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: monospace;
+    align-items: baseline;
+}
+.det2{
+    background-color: white;
+    position: absolute;
+    right: 22%;
+    top: 35%;
+    height: 27%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: monospace;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.buttoon{
+    position: absolute;
+    right: 7%;
+    top: 43%;
+    height: 10%;
+    width: 12%;
+    background-color: #44c7e1;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: monospace;
+    border: #44c7e1;
+    border-radius: 7%;
+}
+.buttoon:hover {background-color: #7ac8d7}
+
+.buttoon:active {
+  background-color: #5196a4;
+  transform: translateY(4px);
 }

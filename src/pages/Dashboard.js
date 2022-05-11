@@ -42,7 +42,24 @@ const Dashboard = () => {
                     <button className='btn2'>Transfer Fund</button>
                 </div>
                 <div className='display'>
-                    <h1>Account Summary</h1>
+                    <p className='title'>Account Summary</p>
+                    <div className='accdetails'>
+                        <div className='topic'>
+                            <p>Savings Account</p>
+                            <p>Closing Balance: {item.savings}.00</p>
+                        </div>
+                        <div className='fulldetails'>
+                            <div className='det1'>
+                                <p>Account No: {item.idAccounts}</p>
+                                <p>Name : {item.custname}</p>
+                            </div>
+                            <div>
+                                <p>Branch : {item.branch}</p>
+                                <p>IFSC code : {item.IFSC}</p>
+                            </div>
+                        </div>
+                        <button className='buttoon'>View Statement</button>
+                    </div>
                 </div>
             </div>
         </main>
