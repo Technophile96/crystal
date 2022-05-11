@@ -6,7 +6,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
-
+    
+    navigate = useNavigate(); 
     const [teahList, setList] = useState([]); 
     const retriveName = (e) =>{
         const id=localStorage.getItem('Name');
