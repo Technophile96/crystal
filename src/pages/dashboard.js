@@ -5,17 +5,17 @@ import axios from 'axios'
 import { useState } from 'react'
 
 const dashboard = () => {
-    retriveName();
-    const [teahList, setList] = useState([]); 
-    const retriveName = (e) =>{
-        e.preventDefault();
-        axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
-            CustID:localStorage.getItem('Name'),
-        }).then((response)=>{
-           console.log(response);
-           setList(response.data);
-        });
-      };
+    // retriveName();
+    // const [teahList, setList] = useState([]); 
+    // const retriveName = (e) =>{
+    //     e.preventDefault();
+    //     axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
+    //         CustID:localStorage.getItem('Name'),
+    //     }).then((response)=>{
+    //        console.log(response);
+    //        setList(response.data);
+    //     });
+    //   };
 
   return (
       <>
@@ -30,11 +30,12 @@ const dashboard = () => {
             </div>
         </nav>
         <main className='main'>
-        {teahList.map((item, index)=>{
+        {/* {teahList.map((item, index)=>{
             return(
             <h1 className='username'>Greetings {item.custname}</h1>
             )
-        })}
+        })} */}
+           <h1 className='username'>Greetings {localStorage.getItem('Name')}</h1>
             <div className='detailbox'>
                 <div className='options'>
                     <button className='btn1 active'>Account Summary</button>
