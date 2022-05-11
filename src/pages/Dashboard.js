@@ -3,7 +3,7 @@ import './dashboard.css'
 import logo from './logopng.png'
 import axios from 'axios' 
 import { useState } from 'react'
-import Collapsible from 'react-collapsible';
+import { Collapsible } from 'react-collapsible';
 
 const Dashboard = () => {
 
