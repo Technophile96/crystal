@@ -10,7 +10,6 @@ const Dashboard = () => {
     const [teahList, setList] = useState([]);
     const [tnsList, setTnsList] = useState([]); 
     const retriveName = (e) =>{
-        e.preventDefault();
         axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
             CustID:id,
         }).then((response)=>{
@@ -19,7 +18,6 @@ const Dashboard = () => {
         });
       };
       const retriveTransactions = (e) =>{
-        e.preventDefault();
         axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
             CustID:id,
         }).then((response)=>{
