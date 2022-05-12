@@ -16,10 +16,11 @@ const Dashboard = () => {
         }).then((response)=>{
            console.log(response);
            setList(response.data);
+           retriveTransactions();
         });
       };
       const retriveTransactions = () =>{
-        axios.post("https://crystal-delta-banking.herokuapp.com/api/tns",{
+        axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
             CustID:id,
         }).then((response)=>{
            console.log(response);
@@ -31,7 +32,6 @@ const Dashboard = () => {
  
       const togglePopup = () => {
         setIsOpen(!isOpen);
-        retriveTransactions();
       }
 
   return (
