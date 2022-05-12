@@ -32,13 +32,14 @@ const Dashboard = () => {
  
       const togglePopup = () => {
         setIsOpen(!isOpen);
+        retriveTransactions();
       }
 
   return (
       <>
         <nav>
             <div className='div-header' onLoad={retriveName}>
-                <div onLoad={retriveTransactions}>
+                <div>
                     <img src={logo} className='nhm' alt="Description of Home"/>
                 </div>
                 <div style={heda} className='btn'>
@@ -74,7 +75,7 @@ const Dashboard = () => {
                                 <p>IFSC code : {item.IFSC}</p>
                             </div>
                         </div>
-                        <button className='buttoon' onClick={togglePopup}>View Statement</button>
+                        <button className='buttoon'onClick={togglePopup}>View Statement</button>
                         {isOpen && <Popup
                         content={<>
                          {tnsList.map((tnsitem, tnsindex)=>{
