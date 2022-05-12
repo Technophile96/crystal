@@ -17,20 +17,20 @@ const Dashboard = () => {
            setList(response.data);
         });
       };
-      const retriveTransactions = (e) =>{
-        axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
-            CustID:id,
-        }).then((response)=>{
-           console.log(response);
-           setTnsList(response.data);
-        });
-      };
+    //   const retriveTransactions = (e) =>{
+    //     axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
+    //         CustID:id,
+    //     }).then((response)=>{
+    //        console.log(response);
+    //        setTnsList(response.data);
+    //     });
+    //   };
 
       const [isOpen, setIsOpen] = useState(false);
  
       const togglePopup = () => {
         setIsOpen(!isOpen);
-        retriveTransactions();
+        // retriveTransactions();
       }
       const togglePopown = () => {
         setIsOpen(!isOpen);
@@ -82,7 +82,7 @@ const Dashboard = () => {
                         
                         
                         <button className='buttoon'onClick={togglePopup}>View Statement</button>
-                        {isOpen && <Popup
+                        {/* {isOpen && <Popup
                         content={<>
                          {tnsList.map((tnsitem, tnsindex)=>{
                           return (
@@ -113,7 +113,7 @@ const Dashboard = () => {
                          })}
                         </>}
                         handleClose={togglePopown}
-                        />}
+                        />} */}
                     </div>
                 </div>
             </div>
