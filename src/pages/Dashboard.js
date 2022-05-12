@@ -48,8 +48,7 @@ const Dashboard = () => {
                 </div>
             </div>
         </nav>
-        {teahList.map((item, index)=>{
-            return (
+       
         <main className='main' >
         
             <h1 className='username'>Greetings {item.custname}!</h1>
@@ -62,6 +61,9 @@ const Dashboard = () => {
                 <div className='display'>
                     <p className='title'>Account Summary</p>
                     <div className='accdetails'>
+                    {teahList.map((item, index)=>{
+                     return (
+                         <>
                         <div className='topic'>
                             <p className='topic1'>Savings Account</p>
                             <p className='topic2'>Closing Balance: <span style={amt}>{item.savings}.00</span></p>
@@ -76,6 +78,9 @@ const Dashboard = () => {
                                 <p>IFSC code : {item.IFSC}</p>
                             </div>
                         </div>
+                        </>
+                        )
+                        })}
                         <button className='buttoon'onClick={togglePopup}>View Statement</button>
                         {isOpen && <Popup
                         content={<>
@@ -113,8 +118,7 @@ const Dashboard = () => {
                 </div>
             </div>
         </main>
-            )
-        })}
+            
        </>
   )
 }
