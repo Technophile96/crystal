@@ -96,7 +96,7 @@ const Dashboard = () => {
                                     <td>{tnsitem.Date}</td>
                                     <td>{tnsitem.Description}</td>
                                     <td>{tnsitem.TransactionNo}</td>
-                                    <td>{tnsitem.credit-debit}</td>
+                                    <td>{tnsitem.creditdebit}</td>
                                     <td>{tnsitem.balance}</td>
                                 </tr>
                             </tbody>
