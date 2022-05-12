@@ -209,3 +209,7 @@ nav{
   background-color: #5196a4;
   transform: translateY(4px);
 }
+.styledtable{
+    background-color: #121212;
+    color: #ddd9d9;
+}

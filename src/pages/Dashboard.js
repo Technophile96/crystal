@@ -38,7 +38,7 @@ const Dashboard = () => {
       <>
         <nav>
             <div className='div-header' onLoad={retriveName}>
-                <div>
+                <div onLoad={retriveTransactions}>
                     <img src={logo} className='nhm' alt="Description of Home"/>
                 </div>
                 <div style={heda} className='btn'>
@@ -48,7 +48,7 @@ const Dashboard = () => {
         </nav>
         {teahList.map((item, index)=>{
             return (
-        <main className='main'>
+        <main className='main' >
         
             <h1 className='username'>Greetings {item.custname}!</h1>
             
@@ -81,7 +81,7 @@ const Dashboard = () => {
                           return (
                               <>
                             <b>Design your Popup</b>
-                            <table className='styled-table' onLoad={retriveTransactions}>
+                            <table className='styledtable'>
                             <thead>
                                 <tr>
                                     <th style={{textAlign:"center"}}>Date</th>
