@@ -9,14 +9,12 @@ const Dashboard = () => {
     const id=localStorage.getItem('Name');
     const [teahList, setList] = useState([]);
     const [tnsList, setTnsList] = useState([]); 
-    const retriveName = (e) =>{
-        e.preventDefault();
+    const retriveName = () =>{
         axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
             CustID:id,
         }).then((response)=>{
            console.log(response);
            setList(response.data);
-           retriveTransactions();
         });
       };
       const retriveTransactions = () =>{
@@ -32,6 +30,7 @@ const Dashboard = () => {
  
       const togglePopup = () => {
         setIsOpen(!isOpen);
+        retriveTransactions();
       }
 
   return (
