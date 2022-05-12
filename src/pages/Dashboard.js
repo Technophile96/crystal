@@ -18,8 +18,7 @@ const Dashboard = () => {
            setList(response.data);
         });
       };
-      const retriveTransactions = (e) =>{
-        e.preventDefault();
+      const retriveTransactions = () =>{
         axios.post("https://crystal-delta-banking.herokuapp.com/api/tns",{
             CustID:id,
         }).then((response)=>{
