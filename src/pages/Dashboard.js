@@ -6,10 +6,10 @@ import { useState } from 'react';
 import Popup from './Popup';
 
 const Dashboard = () => {
-    
-    const [teahList, setList] = useState([]); 
+    const id=localStorage.getItem('Name');
+    const [teahList, setList] = useState([]);
+    const [tnsList, setTnsList] = useState([]); 
     const retriveName = (e) =>{
-        const id=localStorage.getItem('Name');
         e.preventDefault();
         axios.post("https://crystal-delta-banking.herokuapp.com/api/name",{
             CustID:id,
@@ -19,13 +19,12 @@ const Dashboard = () => {
         });
       };
       const retriveTransactions = (e) =>{
-        const id=localStorage.getItem('Name');
         e.preventDefault();
-        axios.post("https://crystal-delta-banking.herokuapp.com/api/transactions",{
+        axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
             CustID:id,
         }).then((response)=>{
            console.log(response);
-           setList(response.data);
+           setTnsList(response.data);
         });
       };
 
@@ -78,10 +77,30 @@ const Dashboard = () => {
                         <button className='buttoon' onClick={togglePopup}>View Statement</button>
                         {isOpen && <Popup
                         content={<>
-                         {teahList.map((item, index)=>{
+                         {tnsList.map((tnsitem, tnsindex)=>{
                           return (
-                            <>
+                              <>
                             <b>Design your Popup</b>
+                            <table className='styled-table'>
+                            <thead>
+                                <tr>
+                                    <th style={{textAlign:"center"}}>Date</th>
+                                    <th style={{textAlign:"center"}}>Description</th>
+                                    <th style={{textAlign:"center"}}>Transaction No</th>
+                                    <th style={{textAlign:"center"}}>credit/debit</th>
+                                    <th style={{textAlign:"center"}}>Closing Balance</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr key={tnsitem.id}>
+                                    <td>{tnsitem.Date}</td>
+                                    <td>{tnsitem.Description}</td>
+                                    <td>{tnsitem.TransactionNo}</td>
+                                    <td>{tnsitem.credit-debit}</td>
+                                    <td>{tnsitem.balance}</td>
+                                </tr>
+                            </tbody>
+                            </table>
                             </>
                             )
                          })}
