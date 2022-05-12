@@ -17,7 +17,7 @@ const Dashboard = () => {
            setList(response.data);
         });
       };
-      const retriveTransactions = () =>{
+      const retriveTransactions = (e) =>{
         axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
             CustID:id,
         }).then((response)=>{
@@ -30,13 +30,16 @@ const Dashboard = () => {
  
       const togglePopup = () => {
         setIsOpen(!isOpen);
+      }
+      const updateNow = ()=>{
+        retriveName();
         retriveTransactions();
       }
 
   return (
       <>
         <nav>
-            <div className='div-header' onLoad={retriveName}>
+            <div className='div-header' onLoad={updateNow}>
                 <div>
                     <img src={logo} className='nhm' alt="Description of Home"/>
                 </div>
