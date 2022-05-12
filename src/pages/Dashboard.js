@@ -30,11 +30,12 @@ const Dashboard = () => {
  
       const togglePopup = () => {
         setIsOpen(!isOpen);
-      }
-      const updateNow = ()=>{
-        togglePopup();
         retriveTransactions();
       }
+      const togglePopown = () => {
+        setIsOpen(!isOpen);
+      }
+
 
   return (
       <>
@@ -80,7 +81,7 @@ const Dashboard = () => {
                         </div>
                         
                         
-                        <button className='buttoon'onClick={updateNow}>View Statement</button>
+                        <button className='buttoon'onClick={togglePopup}>View Statement</button>
                         {isOpen && <Popup
                         content={<>
                          {tnsList.map((tnsitem, tnsindex)=>{
@@ -111,7 +112,7 @@ const Dashboard = () => {
                             )
                          })}
                         </>}
-                        handleClose={togglePopup}
+                        handleClose={togglePopown}
                         />}
                     </div>
                 </div>
