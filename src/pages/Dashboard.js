@@ -34,7 +34,7 @@ const Dashboard = () => {
             return (
         <main className='main'>
         
-            <h1 className='username'>Greetings {item.custname}</h1>
+            <h1 className='username'>Greetings {item.custname}!</h1>
         
             <div className='detailbox'>
                 <div className='options'>
@@ -46,7 +46,7 @@ const Dashboard = () => {
                     <div className='accdetails'>
                         <div className='topic'>
                             <p className='topic1'>Savings Account</p>
-                            <p className='topic2'>Closing Balance: {item.savings}.00</p>
+                            <p className='topic2'>Closing Balance: <span style={amt}>{item.savings}.00</span></p>
                         </div>
                         <div className='fulldetails'>
                             <div className='det1'>
@@ -74,4 +74,7 @@ export default Dashboard
 const heda={
     display:'flex',
     flexDirection:'row'
+}
+const amt={
+    color: '#44c7e1'
 }

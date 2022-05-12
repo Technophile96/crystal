@@ -149,6 +149,10 @@ nav{
 .topic1{
     position: absolute;
     left: 5%;
+    font-weight: bolder;
+}
+.amt{
+    color: #44c7e1;
 }
 .topic2{
     position: absolute;
