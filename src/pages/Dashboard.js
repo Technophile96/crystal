@@ -20,7 +20,7 @@ const Dashboard = () => {
       };
       const retriveTransactions = (e) =>{
         e.preventDefault();
-        axios.get("https://crystal-delta-banking.herokuapp.com/api/tns",{
+        axios.post("https://crystal-delta-banking.herokuapp.com/api/tns",{
             CustID:id,
         }).then((response)=>{
            console.log(response);
