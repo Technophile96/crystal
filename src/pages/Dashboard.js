@@ -81,7 +81,7 @@ const Dashboard = () => {
                           return (
                               <>
                             <b>Design your Popup</b>
-                            <table className='styled-table'>
+                            <table className='styled-table' onLoad={retriveTransactions}>
                             <thead>
                                 <tr>
                                     <th style={{textAlign:"center"}}>Date</th>
