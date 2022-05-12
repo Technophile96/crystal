@@ -32,14 +32,14 @@ const Dashboard = () => {
         setIsOpen(!isOpen);
       }
       const updateNow = ()=>{
-        retriveName();
+        togglePopup();
         retriveTransactions();
       }
 
   return (
       <>
         <nav>
-            <div className='div-header' onLoad={updateNow}>
+            <div className='div-header' onLoad={retriveName}>
                 <div>
                     <img src={logo} className='nhm' alt="Description of Home"/>
                 </div>
@@ -80,7 +80,7 @@ const Dashboard = () => {
                         </div>
                         
                         
-                        <button className='buttoon'onClick={togglePopup}>View Statement</button>
+                        <button className='buttoon'onClick={updateNow}>View Statement</button>
                         {isOpen && <Popup
                         content={<>
                          {tnsList.map((tnsitem, tnsindex)=>{
