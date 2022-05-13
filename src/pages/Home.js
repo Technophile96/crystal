@@ -15,6 +15,7 @@ const Home = () => {
     }, []);
 
     return (
+        <>
         <div style={{marginTop: "150px"}}>
             <table className='styled-table'>
                 <thead>
@@ -37,6 +38,7 @@ const Home = () => {
                 </tbody>
             </table>
         </div>
+        </>
     )
 }
 
